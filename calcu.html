@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css_link -->
+    <link rel="stylesheet" href="clcu.css">
+
+    <!-- google_font_link -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    
+    <title>scientific-calculator</title>
+   
+</head>
+<body>
+    <h1>My-Calculator</h1>
+
+    <!-- calculator_form_start -->
+    <form action="" name="scientific_calculator">
+        <h3>CASIO</h3>
+        <!-- calculator_display -->
+        <input type="text" name="display" disabled>
+        <hr>
+
+        <!-- caldulator_button_input_start -->
+
+        <input type="button" value="&radic;" class="prothom_2ta_row" onclick="scientific_calculator.display.value = Math.sqrt(scientific_calculator.display.value)" >
+        <input type="button" value="x^3" class="prothom_2ta_row" onclick="scientific_calculator.display.value= Math.pow(scientific_calculator.display.value,3 )" >
+        <input type="button" value="^" class="prothom_2ta_row" onclick="scientific_calculator.display.value= Math.pow(scientific_calculator.display.value,2 )">
+        <input type="button" value="(" class="prothom_2ta_row" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '('">
+        <input type="button" value=")" class="prothom_2ta_row" onclick="scientific_calculator.display.value = scientific_calculator.display.value + ')'">
+
+
+        <br>
+
+        
+        <input type="button" value="sin" class="prothom_2ta_row" onclick="scientific_calculator.display.value= Math.sin(scientific_calculator.display.value)">
+        <input type="button" value="cos" class="prothom_2ta_row" onclick="scientific_calculator.display.value= Math.cos(scientific_calculator.display.value)">
+        <input type="button" value="ten" class="prothom_2ta_row" onclick="scientific_calculator.display.value= Math.ten(scientific_calculator.display.value)">
+        <input type="button" value="log" class="prothom_2ta_row" onclick="scientific_calculator.display.value= Math.log(scientific_calculator.display.value)">
+        <input type="button" value="||" class="prothom_2ta_row" onclick="scientific_calculator.display.value= Math.abs(scientific_calculator.display.value)">
+
+
+        <br>
+
+        
+        <input type="button" value="7" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '7'">
+        <input type="button" value="8" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '8'">
+        <input type="button" value="9" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '9'">
+        <input type="button" value="DEL"class="clear" onclick="scientific_calculator.display.value = scientific_calculator.display.value.slice(0,-1)  ">
+        <input type="button" value="AC" class="clear" onclick="scientific_calculator.display.value = ''">
+
+
+        <br>
+
+        
+        <input type="button" value="4" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '4'">
+        <input type="button" value="5"  class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '5'">
+        <input type="button" value="6" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '6'">
+        <input type="button" value="*" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '*'">
+        <input type="button" value="/" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '/'">
+
+
+        <br>
+
+        
+        <input type="button" value="1" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '1'">
+        <input type="button" value="2" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '2'">
+        <input type="button" value="3" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '3'">
+        <input type="button" value="+" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '+'">
+        <input type="button" value="-" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '-'">
+
+
+        <br>
+
+        
+        <input type="button" value="0" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '0'">
+        <input type="button" value="." class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + '.'">
+        <input type="button" value="&Pi;" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = Math.PI  "PI">
+        <input type="button" value="ANS" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value = scientific_calculator.display.value + eval(scientific_calculator.display.value)">
+        <input type="button" value="=" class="clear_ebong_2ta_row_bade_sob_button_golo" onclick="scientific_calculator.display.value =  eval(scientific_calculator.display.value)">
+
+        <!-- caldulator_button_input_end -->
+
+
+    </form>
+    <!-- calculator_form_end -->
+
+
+</body>
+</html>
